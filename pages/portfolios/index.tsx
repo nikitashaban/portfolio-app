@@ -1,24 +1,22 @@
 import React from "react";
-import { NextPage } from 'next';
-
+import { NextPage } from "next";
 
 interface IProps {
-  testingData: string
+  testingData: string;
 }
 
-const apiCall = () => {
-  return new Promise((res, rej) => {
-    setTimeout(() => {
-      res({ testingData: "123" })
-    }, 2000)
-  })
-}
-
+// const apiCall = (): Promise<IProps> => {
+//   return new Promise((res, rej) => {
+//     setTimeout(() => {
+//       res({ testingData: "123" });
+//     }, 2000);
+//   });
+// };
 
 const Portfolios: NextPage<IProps> = ({ testingData }) => {
   return (
     <>
-      {testingData}
+      {/* {testingData} */}
       <section className="section-title">
         <div className="px-2">
           <div className="pt-5 pb-4">
@@ -70,12 +68,9 @@ const Portfolios: NextPage<IProps> = ({ testingData }) => {
   );
 };
 
-
-
-Portfolios.getInitialProps = async () => {
-  const data = await apiCall()
-  return { ...data }
-}
-
+// Portfolios.getInitialProps = async () => {
+//   const data = await apiCall();
+//   return { ...data };
+// };
 
 export default Portfolios;

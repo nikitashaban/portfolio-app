@@ -1,8 +1,5 @@
 import React from "react";
 
-
-
-
 const Home = () => (
   <>
     {/* HOME PAGE STARTS */}
@@ -55,7 +52,7 @@ const Home = () => (
     </section>
     <a href="" className="btn btn-main bg-blue ttu">
       See More Portfolios
-      </a>
+    </a>
     <section className="section-title">
       <div className="px-2">
         <div className="pt-5 pb-4">
@@ -102,8 +99,7 @@ const Home = () => (
     </section>
     <a href="" className="btn btn-main bg-blue ttu">
       See More Posts
-      </a>
-
+    </a>
 
     {/* REPLIER STARTS */}
     {/* <div className='reply-controls is-open'> */}
@@ -139,13 +135,6 @@ const Home = () => (
       </div>
     </div>
     {/* REPLIER ENDS */}
-    {/* FOOTER STARTS */}
-    <footer id="sticky-footer" className="py-4 bg-black text-white-50 py-3">
-      <div className="container text-center">
-        <small>Copyright &copy; Your Website</small>
-      </div>
-    </footer>
-    {/* FOOTER ENDS */}
   </>
 );
 
